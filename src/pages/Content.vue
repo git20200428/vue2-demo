@@ -5,8 +5,10 @@
 <script>
 export default {
 name: "Content",
-  beforeCreate() {
-    console.log(this.$route)
+  props:['name','keyword','keyp'],
+  mounted() {
+    console.log(this.$route);
+    console.log(this.$props)
   }
 }
 </script>

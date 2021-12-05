@@ -37,13 +37,26 @@ const routes =  [
         ]
     },
     {
-        path:'/content/:key?',
-        name: 'content',
+        path:'/content/:keyword?',
+        // name: 'content',
+        // path:'/content',
+        // meta:{ aaa:'abc'},
+        // meta:['aaa','bbb'],
+        // meta: 'abc',
+        // props:true,
+        // props: {
+        //     name:'zhangsan'
+        // },
+        props(rou,a,b){
+            console.log(a,b)
+            const {keyword} = rou.params;
+            return {keyp: keyword}
+        },
         component:Content
     },
     {
         path:'/about/:keywork?',
-        name: 'about',
+        // name: 'about',
         component:About
     }
     // {
