@@ -14,7 +14,7 @@ const routes =  [
             {
                 // path: 'message',//简写形式，不能写成:'/message' 否则会导致路由匹配出错
                 path: 'message',
-                name: 'message',
+                name: '/message',
                 component: HomeMessage,
                 children:[
                     {
@@ -38,7 +38,7 @@ const routes =  [
     },
     {
         path:'/content/:keyword?',
-        // name: 'content',
+        name: '/about2',
         // path:'/content',
         // meta:{ aaa:'abc'},
         // meta:['aaa','bbb'],
@@ -56,7 +56,7 @@ const routes =  [
     },
     {
         path:'/about/:keywork?',
-        // name: 'about',
+        name: '/about2',
         component:About
     }
     // {

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div :name="name">
+        <div id="root" style="width: 200px;":style="styleObj">
+            <h1>{{name}}</h1>
+        </div>
+        <div>{{name}}</div>
+    </div>
+<script>
+   new Vue({
+       el:'#root',
+       data:{
+           name:'zhangsan',
+           styleObj:{
+               background: 'red'
+           }
+       }
+   })
+</script>
+</body>
+</html>
